@@ -78,7 +78,7 @@ fun main() {
     println("Результат работы функциональной реализации:")
     displayCombinations(setOf('a', 'b', 'c').combinationsWithRepetitionsFunc(3))
     println("Результат работы итеративной реализации:")
-    displayCombinations(setOf('a', 'b', 'c').combinationsWithRepetitionsFunc(3))
+    displayCombinations(setOf('a', 'b', 'c').combinationsWithRepetitionsIter(3))
     println()
     val set = setOf('a', 'b', 'c', 'd', 'e', 'f')
     val combinationSize = 20
@@ -122,16 +122,17 @@ bbc
 bcc
 ccc
 Результат работы итеративной реализации:
-aaa
-aab
-aac
-abb
-abc
-acc
-bbb
-bbc
-bcc
 ccc
+bcc
+bbc
+bbb
+acc
+abc
+abb
+aac
+aab
+aaa
+
 
 Время исполнения функциональной реализации: 14179 ms
 Время исполнения итеративной реализации: 1642 ms
